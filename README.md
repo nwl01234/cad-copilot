@@ -2,6 +2,16 @@
 
 ![CAD Copilot](.assets/banner.svg)
 
+Пример работы: тот же запрос → DXF + SVG-план (сгенерирован `demo.py`):
+
+![план](skrin/plan.svg)
+
+Реальное CPU-обучение intent-классификатора (`python core/finetune.py`): 12 эпох,
+loss 0.39 → 0.006, val accuracy 100%. График построен из stdout-лога запуска
+(`skrin/gen_loss_curve.py` — полилинии, без matplotlib):
+
+![loss](skrin/loss_curve.svg)
+
 ![Python](https://img.shields.io/badge/Python-3.11+-3776AB?logo=python&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.115-009688?logo=fastapi&logoColor=white)
 ![CI](https://img.shields.io/github/actions/workflow/status/nwl01234/cad-copilot/ci.yml?label=CI&logo=github)

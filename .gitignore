@@ -3,4 +3,7 @@ __pycache__/
 .pytest_cache/
 out/
 model/
+data/
+venv/
 .env
+PLAN.md

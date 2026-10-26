@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="196">
+<rect width="640" height="196" fill="#f8fafc"/>
+<rect x="28.0" y="28.0" width="112.0" height="140.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="36.0" y="48.0" font-family="Segoe UI" font-size="13" fill="#1e3a8a">комната 4.0x5.0</text>
+<rect x="145.60000000000002" y="28.0" width="84.0" height="112.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="153.60000000000002" y="48.0" font-family="Segoe UI" font-size="13" fill="#1e3a8a">комната 3.0x4.0</text>
+<rect x="235.20000000000002" y="28.0" width="84.0" height="84.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="243.20000000000002" y="48.0" font-family="Segoe UI" font-size="13" fill="#1e3a8a">кухня 3.0x3.0</text>
+<rect x="28.0" y="173.6" width="56.0" height="84.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="36.0" y="193.6" font-family="Segoe UI" font-size="13" fill="#1e3a8a">коридор 2.0x3.0</text>
+<path d="M 28 28 a 26 26 0 0 1 26 26" stroke="#f59e0b" fill="none" stroke-width="3"/>
+<line x1="580" y1="32" x2="580" y2="68" stroke="#38bdf8" stroke-width="6"/>
+<line x1="580" y1="32" x2="580" y2="68" stroke="#38bdf8" stroke-width="6"/>
+</svg>
