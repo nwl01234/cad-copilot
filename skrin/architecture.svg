@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="430" viewBox="0 0 880 430">
+  <defs>
+    <marker id="a" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#64748b"/></marker>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#0ea5e9"/><stop offset="1" stop-color="#6366f1"/></linearGradient>
+  </defs>
+  <rect width="880" height="430" fill="#ffffff"/>
+  <text x="40" y="34" font-family="Segoe UI" font-size="20" font-weight="700" fill="#0f172a">Пайплайн CAD Copilot</text>
+  <text x="40" y="56" font-family="Segoe UI" font-size="12" fill="#64748b">один офлайн-движок core/autocad_ai.py — три формата вывода</text>
+
+  <!-- col 1: input -->
+  <rect x="40" y="90" width="200" height="150" rx="10" fill="#f1f5f9" stroke="#cbd5e1"/>
+  <rect x="40" y="90" width="200" height="30" rx="10" fill="url(#hdr)"/><rect x="40" y="108" width="200" height="12" fill="url(#hdr)"/>
+  <text x="140" y="111" text-anchor="middle" font-family="Segoe UI" font-size="13" font-weight="600" fill="#ffffff">Вход</text>
+  <text x="52" y="146" font-family="Consolas" font-size="11" fill="#334155">"комната 4x5, кухня 3x3,</text>
+  <text x="52" y="162" font-family="Consolas" font-size="11" fill="#334155"> ванная 2x3, дверь, 2 окна"</text>
+  <text x="52" y="196" font-family="Segoe UI" font-size="11" fill="#64748b">parse_request(): regex → spec</text>
+  <text x="52" y="212" font-family="Segoe UI" font-size="11" fill="#64748b">spec = {rooms, doors, windows}</text>
+  <text x="52" y="228" font-family="Segoe UI" font-size="11" fill="#64748b">intent-модель (bag-of-words)</text>
+
+  <!-- col 2: core -->
+  <rect x="300" y="90" width="220" height="150" rx="10" fill="#eff6ff" stroke="#3b82f6"/>
+  <rect x="300" y="90" width="220" height="30" rx="10" fill="#2563eb"/><rect x="300" y="108" width="220" height="12" fill="#2563eb"/>
+  <text x="410" y="111" text-anchor="middle" font-family="Segoe UI" font-size="13" font-weight="600" fill="#ffffff">core/autocad_ai.py</text>
+  <text x="312" y="146" font-family="Segoe UI" font-size="11" fill="#334155">layout(): упаковка комнат</text>
+  <text x="312" y="162" font-family="Segoe UI" font-size="11" fill="#64748b">строки + перенос, контейнер 12 м</text>
+  <text x="312" y="182" font-family="Segoe UI" font-size="11" fill="#334155">→ [(name, x, y, w, h), ...]</text>
+  <text x="312" y="212" font-family="Segoe UI" font-size="11" fill="#64748b">без GPU, без интернета,</text>
+  <text x="312" y="228" font-family="Segoe UI" font-size="11" fill="#64748b">нулевые внешние зависимости</text>
+
+  <!-- col 3: outputs -->
+  <rect x="580" y="60" width="260" height="62" rx="10" fill="#f0fdf4" stroke="#22c55e"/>
+  <text x="596" y="86" font-family="Consolas" font-size="12" font-weight="700" fill="#15803d">out/plan.dxf</text>
+  <text x="596" y="104" font-family="Segoe UI" font-size="11" fill="#475569">DXF R12, слои = комнаты — AutoCAD</text>
+  <rect x="580" y="134" width="260" height="62" rx="10" fill="#f0fdf4" stroke="#22c55e"/>
+  <text x="596" y="160" font-family="Consolas" font-size="12" font-weight="700" fill="#15803d">out/plan.svg</text>
+  <text x="596" y="178" font-family="Segoe UI" font-size="11" fill="#475569">превью для отчётов и фронтенда</text>
+  <rect x="580" y="208" width="260" height="62" rx="10" fill="#f0fdf4" stroke="#22c55e"/>
+  <text x="596" y="234" font-family="Consolas" font-size="12" font-weight="700" fill="#15803d">out/plan.gcode</text>
+  <text x="596" y="252" font-family="Segoe UI" font-size="11" fill="#475569">ЧПУ: G21/G90, мм, подъём Z между контурами</text>
+  <!-- import -->
+  <rect x="580" y="300" width="260" height="62" rx="10" fill="#fff7ed" stroke="#f97316"/>
+  <text x="596" y="326" font-family="Consolas" font-size="12" font-weight="700" fill="#c2410c">core/dxf_import.py</text>
+  <text x="596" y="344" font-family="Segoe UI" font-size="11" fill="#475569">обратный путь: DXF → слои → bbox комнат,</text>
+
+  <!-- arrows -->
+  <line x1="240" y1="165" x2="296" y2="165" stroke="#64748b" stroke-width="2" marker-end="url(#a)"/>
+  <line x1="520" y1="130" x2="576" y2="92" stroke="#22c55e" stroke-width="2" marker-end="url(#a2)"/>
+  <line x1="520" y1="140" x2="576" y2="163" stroke="#22c55e" stroke-width="2" marker-end="url(#a2)"/>
+  <line x1="520" y1="155" x2="576" y2="238" stroke="#22c55e" stroke-width="2" marker-end="url(#a2)"/>
+  <line x1="700" y1="300" x2="700" y2="176" stroke="#f97316" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#a2)"/>
+  <text x="712" y="300" font-family="Segoe UI" font-size="10" fill="#f97316">редактирование (shift/remove) → save_dxf</text>
+
+  <!-- api strip -->
+  <rect x="40" y="300" width="480" height="62" rx="10" fill="#fafaf9" stroke="#e7e5e4"/>
+  <text x="56" y="326" font-family="Segoe UI" font-size="12" font-weight="600" fill="#0f172a">FastAPI (app.py)</text>
+  <text x="56" y="344" font-family="Consolas" font-size="11" fill="#64748b">POST /api/generate · GET /api/preview · POST /api/gcode · POST /api/import · GET /health</text>
+
+  <!-- footer note -->
+  <text x="40" y="402" font-family="Segoe UI" font-size="11" fill="#94a3b8">core/finetune.py — обучает intent-классификатор (240 примеров, 5 интентов, softmax + SGD)</text>
+  <text x="40" y="418" font-family="Segoe UI" font-size="11" fill="#94a3b8">core/qa.py — honeypot-проверки датасета и модели, отчёт data/qa_report.json</text>
+  <marker id="a2" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#22c55e"/></marker>
+</svg>
