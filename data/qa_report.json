@@ -1,0 +1,46 @@
+{
+ "data_consistency": {
+  "rows": 120,
+  "unique": 62,
+  "conflicts": 0,
+  "valid": true
+ },
+ "honeypots": {
+  "case_count": 3,
+  "pass_rate": 1.0,
+  "cases": [
+   {
+    "text": "комната 3x4 дверь окно",
+    "expected_rooms": 1,
+    "got_rooms": 1,
+    "expected_windows": 1,
+    "got_windows": 1,
+    "pass": true
+   },
+   {
+    "text": "кухня 2x2",
+    "expected_rooms": 1,
+    "got_rooms": 1,
+    "expected_windows": 0,
+    "got_windows": 0,
+    "pass": true
+   },
+   {
+    "text": "зал 5x4 вход и выход",
+    "expected_rooms": 1,
+    "got_rooms": 1,
+    "expected_windows": 0,
+    "got_windows": 0,
+    "pass": true
+   }
+  ]
+ },
+ "model_classes": [
+  "add_bath",
+  "add_door",
+  "add_kitchen",
+  "add_room",
+  "add_window"
+ ],
+ "artefact": "model/intent_model.json"
+}

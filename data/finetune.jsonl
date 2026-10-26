@@ -1,0 +1,120 @@
+{"text": "ванная 3x5", "intent": "add_bath"}
+{"text": "офис 6x2", "intent": "add_room"}
+{"text": "окно", "intent": "add_window"}
+{"text": "добавь комнату 2 на 5", "intent": "add_room"}
+{"text": "добавь комнату 3 на 2", "intent": "add_room"}
+{"text": "зал 6 на 2", "intent": "add_room"}
+{"text": "окно на южной стене", "intent": "add_window"}
+{"text": "дверь справа", "intent": "add_door"}
+{"text": "2 окна", "intent": "add_window"}
+{"text": "сделай кухню 6 на 2", "intent": "add_kitchen"}
+{"text": "окно на южной стене", "intent": "add_window"}
+{"text": "окно", "intent": "add_window"}
+{"text": "окно", "intent": "add_window"}
+{"text": "окно на южной стене", "intent": "add_window"}
+{"text": "2 окна", "intent": "add_window"}
+{"text": "2 окна", "intent": "add_window"}
+{"text": "кухня 3x3", "intent": "add_kitchen"}
+{"text": "2 окна", "intent": "add_window"}
+{"text": "ванная 5x4", "intent": "add_bath"}
+{"text": "зал 6 на 5", "intent": "add_room"}
+{"text": "санузел 3 на 5", "intent": "add_bath"}
+{"text": "офис 2x6", "intent": "add_room"}
+{"text": "санузел 4 на 6", "intent": "add_bath"}
+{"text": "окно", "intent": "add_window"}
+{"text": "ванная 5x2", "intent": "add_bath"}
+{"text": "санузел 6 на 5", "intent": "add_bath"}
+{"text": "дверь слева", "intent": "add_door"}
+{"text": "ванная 3x6", "intent": "add_bath"}
+{"text": "дверь слева", "intent": "add_door"}
+{"text": "сделай кухню 3 на 5", "intent": "add_kitchen"}
+{"text": "дверь слева", "intent": "add_door"}
+{"text": "дверь справа", "intent": "add_door"}
+{"text": "поставь дверь", "intent": "add_door"}
+{"text": "дверь справа", "intent": "add_door"}
+{"text": "кухня 2x3", "intent": "add_kitchen"}
+{"text": "сделай кухню 3 на 2", "intent": "add_kitchen"}
+{"text": "2 окна", "intent": "add_window"}
+{"text": "офис 3x5", "intent": "add_room"}
+{"text": "окно", "intent": "add_window"}
+{"text": "2 окна", "intent": "add_window"}
+{"text": "2 окна", "intent": "add_window"}
+{"text": "поставь дверь", "intent": "add_door"}
+{"text": "дверь справа", "intent": "add_door"}
+{"text": "кухня 5x3", "intent": "add_kitchen"}
+{"text": "ванная 6x2", "intent": "add_bath"}
+{"text": "комната 6x3", "intent": "add_room"}
+{"text": "ванная 6x2", "intent": "add_bath"}
+{"text": "кухня 6x5", "intent": "add_kitchen"}
+{"text": "санузел 4 на 6", "intent": "add_bath"}
+{"text": "дверь слева", "intent": "add_door"}
+{"text": "дверь слева", "intent": "add_door"}
+{"text": "офис 3x2", "intent": "add_room"}
+{"text": "ванная 5x3", "intent": "add_bath"}
+{"text": "кухня 6x4", "intent": "add_kitchen"}
+{"text": "2 окна", "intent": "add_window"}
+{"text": "офис 4x6", "intent": "add_room"}
+{"text": "сделай кухню 4 на 3", "intent": "add_kitchen"}
+{"text": "кухня 6x3", "intent": "add_kitchen"}
+{"text": "поставь дверь", "intent": "add_door"}
+{"text": "дверь справа", "intent": "add_door"}
+{"text": "ванная 5x4", "intent": "add_bath"}
+{"text": "окно на южной стене", "intent": "add_window"}
+{"text": "ванная 4x2", "intent": "add_bath"}
+{"text": "зал 3 на 5", "intent": "add_room"}
+{"text": "ванная 3x5", "intent": "add_bath"}
+{"text": "поставь дверь", "intent": "add_door"}
+{"text": "добавь комнату 5 на 3", "intent": "add_room"}
+{"text": "кухня 5x4", "intent": "add_kitchen"}
+{"text": "поставь дверь", "intent": "add_door"}
+{"text": "зал 3 на 3", "intent": "add_room"}
+{"text": "добавь комнату 3 на 6", "intent": "add_room"}
+{"text": "сделай кухню 6 на 6", "intent": "add_kitchen"}
+{"text": "ванная 3x6", "intent": "add_bath"}
+{"text": "зал 2 на 2", "intent": "add_room"}
+{"text": "дверь справа", "intent": "add_door"}
+{"text": "ванная 3x4", "intent": "add_bath"}
+{"text": "окно на южной стене", "intent": "add_window"}
+{"text": "поставь дверь", "intent": "add_door"}
+{"text": "санузел 5 на 6", "intent": "add_bath"}
+{"text": "окно", "intent": "add_window"}
+{"text": "2 окна", "intent": "add_window"}
+{"text": "кухня 6x2", "intent": "add_kitchen"}
+{"text": "кухня 3x5", "intent": "add_kitchen"}
+{"text": "окно на южной стене", "intent": "add_window"}
+{"text": "2 окна", "intent": "add_window"}
+{"text": "зал 6 на 2", "intent": "add_room"}
+{"text": "кухня 4x2", "intent": "add_kitchen"}
+{"text": "окно", "intent": "add_window"}
+{"text": "зал 5 на 4", "intent": "add_room"}
+{"text": "санузел 5 на 6", "intent": "add_bath"}
+{"text": "2 окна", "intent": "add_window"}
+{"text": "окно", "intent": "add_window"}
+{"text": "дверь слева", "intent": "add_door"}
+{"text": "санузел 2 на 3", "intent": "add_bath"}
+{"text": "комната 3x4", "intent": "add_room"}
+{"text": "сделай кухню 4 на 3", "intent": "add_kitchen"}
+{"text": "кухня 5x3", "intent": "add_kitchen"}
+{"text": "поставь дверь", "intent": "add_door"}
+{"text": "сделай кухню 3 на 5", "intent": "add_kitchen"}
+{"text": "санузел 5 на 3", "intent": "add_bath"}
+{"text": "ванная 2x4", "intent": "add_bath"}
+{"text": "санузел 6 на 5", "intent": "add_bath"}
+{"text": "офис 5x4", "intent": "add_room"}
+{"text": "окно", "intent": "add_window"}
+{"text": "офис 2x4", "intent": "add_room"}
+{"text": "зал 3 на 4", "intent": "add_room"}
+{"text": "дверь справа", "intent": "add_door"}
+{"text": "2 окна", "intent": "add_window"}
+{"text": "ванная 2x4", "intent": "add_bath"}
+{"text": "сделай кухню 5 на 2", "intent": "add_kitchen"}
+{"text": "комната 2x4", "intent": "add_room"}
+{"text": "2 окна", "intent": "add_window"}
+{"text": "офис 5x2", "intent": "add_room"}
+{"text": "окно на южной стене", "intent": "add_window"}
+{"text": "кухня 2x6", "intent": "add_kitchen"}
+{"text": "комната 3x4", "intent": "add_room"}
+{"text": "сделай кухню 3 на 4", "intent": "add_kitchen"}
+{"text": "2 окна", "intent": "add_window"}
+{"text": "2 окна", "intent": "add_window"}
+{"text": "комната 4x2", "intent": "add_room"}

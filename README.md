@@ -13,6 +13,7 @@
 |---|---|
 | `core/autocad_ai.py` | офлайн-движок: парсер запроса → спецификация → раскладка → DXF + SVG |
 | `core/finetune.py` | генерация датасета, обучение intent-классификатора (CPU), сохранение модели |
+| `core/qa.py` | QA датасета и модели: honeypot-выборка, consistency, отчёт в `data/qa_report.json` |
 | `app.py` | FastAPI: `/api/generate`, `/api/preview`, `/health` |
 | `demo.py` | end-to-end прогон без сервера: текст → `out/plan.dxf` + `out/plan.svg` |
 | `tests/test_core.py` | 4 теста: парсер, DXF-пайплайн, SVG, обучение |
