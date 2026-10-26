@@ -2,3 +2,5 @@ fastapi
 uvicorn
 pytest
 python-multipart
+ezdxf
+pytest

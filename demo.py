@@ -1,8 +1,11 @@
 # -*- coding: utf-8 -*-
-"""Демо: текстовый запрос -> чертёж. Запуск: python demo.py"""
-from core.autocad_ai import generate_dxf, parse_request, render_svg
+"""Демо: текстовый запрос -> архитектурный план. Запуск: python demo.py"""
+from core.autocad_ai import parse_request
+from core.model import build_plan
+from core.render import render_dxf, render_svg
+from core.acad_scr import make_open_scr, make_plot_scr, save_scr
 
-TEXT = "квартира: комната 4x5, комната 3x4, кухня 3x3, коридор 2x3, дверь справа, 2 окна"
+TEXT = "комната 4x5, комната 3x4, кухня 3x3, ванная 2x3, 4 двери, 2 окна"
 
 if __name__ == "__main__":
     from pathlib import Path
@@ -10,9 +13,12 @@ if __name__ == "__main__":
     spec = parse_request(TEXT)
     print(f"Запрос: {TEXT}")
     print(f"Комнат: {len(spec['rooms'])}, дверей: {spec['doors']}, окон: {spec['windows']}")
-    from core.autocad_ai import layout
-    for name, x, y, w, h in layout(spec):
-        print(f"  {name:8} @ ({x:>4}, {y:>4})  {w}x{h}")
-    print("DXF:", generate_dxf(spec, "out/plan.dxf"))
-    print("SVG:", render_svg(spec, "out/plan.svg"))
-    print("Готово: out/plan.dxf открывается в AutoCAD.")
+    plan = build_plan(spec)
+    dxf = render_dxf(plan, "out/plan.dxf")
+    svg = render_svg(plan, "out/plan.svg")
+    save_scr(make_open_scr(dxf), "out/acad_open.scr")
+    save_scr(make_plot_scr(dxf, "out/plan.pdf"), "out/acad_plot.scr")
+    print(f"Площадь: {plan['area']} м2, примитивов: {len(plan['prims'])}")
+    print(f"DXF: {dxf}")
+    print(f"SVG: {svg}")
+    print("AutoCAD: out/acad_open.scr (SCRIPT) или accoreconsole /i out/plan.dxf /s out/acad_open.scr")

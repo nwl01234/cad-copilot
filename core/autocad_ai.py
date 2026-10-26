@@ -41,11 +41,18 @@ def generate_dxf(spec: dict, path: str) -> str:
     """Пишет DXF R12 (работает без ezdxf; с ezdxf — форматированный вывод)."""
     try:
         import ezdxf
-        doc = ezdxf.new("R12")
+        doc = ezdxf.new("R2000")
         msp = doc.modelspace()
+        TR = dict(zip("абвгдежзийклмнопрстуфхцчшщъыьэюя", "abvgdezzijklmnoprstufhccss'y'eua"))
+        tr = lambda s: "".join(TR.get(c, c) for c in s.lower()).upper() or "ROOM"
         for name, x, y, w, h in layout(spec):
-            msp.add_lwpolyline([(x, y), (x + w, y), (x + w, y + h), (x, y + h)])
-            msp.add_text(name, dxfattribs={"height": 0.25}).set_placement((x + 0.3, y + h - 0.4))
+            L = tr(name)
+            if L not in doc.layers:
+                doc.layers.add(L)
+            pts = [(x, y), (x + w, y), (x + w, y + h), (x, y + h), (x, y)]
+            for i in range(4):
+                msp.add_line(pts[i], pts[i + 1], dxfattribs={"layer": L})
+            msp.add_text(name, dxfattribs={"height": 0.25, "layer": L}).set_placement((x + 0.3, y + h - 0.4))
         for _ in range(spec["doors"]):
             msp.add_line((0, 0), (0, 0))
         doc.saveas(path)
